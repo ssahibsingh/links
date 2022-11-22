@@ -1,72 +1,86 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap'); */
-:root{
-  --black: #0A0A0A;
+:root {
+  --black: #333;
   --white: #fff;
   --grey: #E5E5E5;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--black)
 }
 
 /* Utility */
-a{
+a {
   text-decoration: none;
   color: inherit
 }
 
-.content{
+.content {
   width: 80%;
-  /* transition: all 2s ease-in-out; */
 }
+
 @media screen and (max-width: 768px) {
-  .content{
+  .content {
     width: 90%;
   }
 }
 
 /* Navbar */
 
-.logo{
+.logo {
   border-radius: 50%;
   width: 40px;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--black)
 }
-.navbar-btn{
-  background-color:darkseagreen;
+
+.navbar-btn {
+  background-color: darkseagreen;
   border-radius: 20px;
 }
 
 
 /* Main */
-main{
-  min-height: 65vh;
+main {
   width: 100%;
 }
 
 /* Cards */
-.cards{
+.cards {
   border-radius: 7px;
   transition: transform 0.1s;
   height: 100%;
 }
-.cards:hover{
-  background-color: #e9e9e9;
-  transform: scale(1.01);
+
+.cards:hover {
+  background-color: #EDEDED;
+  transform: scale(1.02);
 }
-.cards-wrap a{
+
+.cards-wrap a {
   color: var(--black);
 }
-.cards-img{
+
+.cards-img {
   border-radius: 5px;
 }
-.cards-name{
+
+.cards-name {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .cards-about {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
 }
