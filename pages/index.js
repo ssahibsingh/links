@@ -4,7 +4,7 @@ import Link from "next/link";
 // import Image from 'next/image'
 
 import links from "../data/links";
-import logo from "../public/logo.png";
+import logo from "../public/logo.webp";
 export default function Home() {
   return (
     <>
@@ -26,7 +26,7 @@ export default function Home() {
         <meta property="og:title" content="Sahib Singh" />
         <meta
           property="og:description"
-          content="Web Developer || Co-Founder at Gaming Geeks || IT undergrad at NITJ"
+          content="Sahib Singh's Links"
         />
         <meta property="og:image" content="./website.png" />
 
@@ -35,7 +35,7 @@ export default function Home() {
         <meta property="twitter:title" content="Sahib Singh" />
         <meta
           property="twitter:description"
-          content="Web Developer || Co-Founder at Gaming Geeks || IT undergrad at NITJ"
+          content="Sahib Singh's Links"
         />
         <meta property="twitter:image" content="./website.png" />
       </Head>
