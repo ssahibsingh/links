@@ -1,26 +1,72 @@
-html,
-body {
+/* @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap'); */
+:root{
+  --black: #0A0A0A;
+  --white: #fff;
+  --grey: #E5E5E5;
+}
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-  color: inherit;
+/* Utility */
+a{
   text-decoration: none;
+  color: inherit
 }
 
-* {
-  box-sizing: border-box;
+.content{
+  width: 80%;
+  /* transition: all 2s ease-in-out; */
+}
+@media screen and (max-width: 768px) {
+  .content{
+    width: 90%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* Navbar */
+
+.logo{
+  border-radius: 50%;
+  width: 40px;
+}
+
+.navbar-brand{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar-btn{
+  background-color:darkseagreen;
+  border-radius: 20px;
+}
+
+
+/* Main */
+main{
+  min-height: 65vh;
+  width: 100%;
+}
+
+/* Cards */
+.cards{
+  border-radius: 7px;
+  transition: transform 0.1s;
+  height: 100%;
+}
+.cards:hover{
+  background-color: #e9e9e9;
+  transform: scale(1.01);
+}
+.cards-wrap a{
+  color: var(--black);
+}
+.cards-img{
+  border-radius: 5px;
+}
+.cards-name{
+  font-size: 1.2rem;
+  font-weight: 600;
 }
