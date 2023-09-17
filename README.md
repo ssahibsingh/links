@@ -1,24 +1,19 @@
-
 # Links
 
 A Links website to get all my Social Media links at one place | Made with Nextjs
-
 
 ## Screenshots
 
 ![App Screenshot](https://raw.githubusercontent.com/ssahibsingh/links/main/public/website.png)
 
-
 ## Demo
 
 https://ssahibsingh.github.io/links/
 
-
 ## Tech Stack
 
-* Next.js
-* Bootstrap
-
+- Next.js
+- Bootstrap
 
 ## Run site locally
 
@@ -27,7 +22,7 @@ https://ssahibsingh.github.io/links/
 Fork the repository. then clone the repo locally by doing -
 
 ```bash
-git clone https://github.com/ssahibsingh/ssahibsingh.github.io.git
+git clone https://github.com/ssahibsingh/links.git
 ```
 
 ### Step 2: Install Dependencies
@@ -35,12 +30,21 @@ git clone https://github.com/ssahibsingh/ssahibsingh.github.io.git
 cd into the directory
 
 ```bash
-cd ssahibsingh.github.io
+cd links
 ```
 
 install all the dependencies
+
 ```bash
 npm install
+```
+
+### Step 3: Run Locally
+
+Then start the development server
+
+```bash
+npm run dev
 ```
 
 ## Contributing
@@ -48,8 +52,6 @@ npm install
 Contributions are always welcome!
 Just raise an issue, we will discuss it.
 
-
 ## Feedback
 
 If you have any feedback, please reach out to me [here](https://ssahibsingh.github.io/#contact)
-
