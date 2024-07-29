@@ -78,6 +78,6 @@ export const OtherLinks = [
     id: 6,
     name: "GFG",
     url: "https://www.geeksforgeeks.org/user/snone181/",
-    img: require("../public/assets/gfg.png"),
+    img: require("../public/assets/GFG.png"),
   },
 ];
