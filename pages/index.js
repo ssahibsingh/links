@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 // import Image from 'next/image'
 
-import links from "../data/links";
-import logo from "../public/logo.webp";
+import { mainLinks as links, OtherLinks } from "../data/links";
+import logo from "../public/logo.png";
 export default function Home() {
   return (
     <>
@@ -12,10 +12,7 @@ export default function Home() {
         <title>Sahib Singh&apos;s Links</title>
         <meta name="title" content="Sahib Singh's Links" />
         <meta name="author" content="Sahib Singh" />
-        <meta
-          name="description"
-          content="Sahib Singh's Links"
-        />
+        <meta name="description" content="Sahib Singh's Links" />
         <meta
           name="keywords"
           content="Sahib Singh, Sahib Singh's Links, Sahib Singh's Linktree, Sahib, Soorme, Sardar Sahib Singh, Sahib Singh Khanna, Sahib Singh Github, Sahib Singh LinkedIn, Sahib Singh Gaming Geeks, ssahibsingh, Gaming Geeks, Soorme.com, Giigaa.com "
@@ -24,19 +21,16 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ssahibsingh.github.io/links" />
         <meta property="og:title" content="Sahib Singh" />
-        <meta
-          property="og:description"
-          content="Sahib Singh's Links"
-        />
+        <meta property="og:description" content="Sahib Singh's Links" />
         <meta property="og:image" content="./website.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://ssahibsingh.github.io/links" />
-        <meta property="twitter:title" content="Sahib Singh" />
         <meta
-          property="twitter:description"
-          content="Sahib Singh's Links"
+          property="twitter:url"
+          content="https://ssahibsingh.github.io/links"
         />
+        <meta property="twitter:title" content="Sahib Singh" />
+        <meta property="twitter:description" content="Sahib Singh's Links" />
         <meta property="twitter:image" content="./website.png" />
       </Head>
 
@@ -54,10 +48,10 @@ export default function Home() {
 
       <main className="mt-4">
         <div className="content container">
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex">
             {links.map((item) => {
               return (
-                <div key={item.id} className="col-md-4 col-6 my-3">
+                <div key={item.id} className="col-md-4 col-6 my-2">
                   <div className="cards-wrap">
                     <Link href={item.url} rel="noreferrer" target="_blank">
                       <div className="cards p-3 d-flex justify-content-center">
@@ -69,6 +63,29 @@ export default function Home() {
                           />
                           <h3 className="my-2 cards-name">{item.name}</h3>
                           <p className="text-muted cards-about">{item.about}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="row d-flex">
+            {OtherLinks.map((item) => {
+              return (
+                <div key={item.id} className="col-md-2 col-4">
+                  <div className="cards-wrap">
+                    <Link href={item.url} rel="noreferrer" target="_blank">
+                      <div className="cards p-3 d-flex justify-content-center">
+                        <div className="cards-content">
+                          <Image
+                            src={item.img}
+                            className="img-fluid cards-img"
+                            alt=""
+                          />
+                          <h3 className="my-2 cards-name text-center">{item.name}</h3>
+                          {/* <p className="text-muted cards-about">{item.about}</p> */}
                         </div>
                       </div>
                     </Link>
